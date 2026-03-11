@@ -1,0 +1,67 @@
+name: Bug report
+description: Signaler un bug / Report a bug
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir ce formulaire. Plus les details sont precis, plus la correction est rapide.
+        Please complete this form. The more precise the details are, the faster we can fix it.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Resume du bug / Bug summary
+      description: Une phrase courte qui decrit le probleme / A short sentence describing the issue
+      placeholder: Ex. Le switch de langue ne met pas a jour le menu
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Etapes pour reproduire / Steps to reproduce
+      description: Decris les etapes exactes pour reproduire le bug / Describe exact steps to reproduce
+      placeholder: |
+        1. Aller sur ...
+        2. Cliquer sur ...
+        3. Constater ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu / Expected behavior
+      placeholder: Ex. La langue devrait passer en anglais sur toute la page
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportement observe / Actual behavior
+      placeholder: Ex. Seul le header change, le contenu reste en francais
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Navigateur / Browser
+      description: Navigateur et version / Browser and version
+      placeholder: Ex. Chrome 123, Firefox 125, Safari 17
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environnement / Environment
+      description: Local, preprod, prod, OS, etc.
+      placeholder: Ex. Local Windows 11 / PHP 8.2
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / captures
+      description: Colle les logs utiles ou ajoute des captures d'ecran / Paste logs or add screenshots
+      render: shell

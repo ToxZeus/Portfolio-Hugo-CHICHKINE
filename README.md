@@ -64,6 +64,62 @@ php -S localhost:8000 -t public
 - Composants réutilisables
 - Gestion moderne des assets
 
+## 🔀 Git Flow
+
+Le projet suit une stratégie Git Flow simple:
+
+- `main`: branche de production (stable)
+- `develop`: branche d'intégration (développement courant)
+- `feature/*`: nouvelles fonctionnalités
+- `release/*`: préparation de version
+- `hotfix/*`: correction urgente de production
+
+### Initialisation
+
+```bash
+git checkout main
+git checkout -b develop
+git push -u origin develop
+```
+
+### Créer une feature
+
+```bash
+git checkout develop
+git checkout -b feature/nom-feature
+```
+
+### Préparer une release
+
+```bash
+git checkout develop
+git checkout -b release/x.y.z
+```
+
+### Créer un hotfix
+
+```bash
+git checkout main
+git checkout -b hotfix/x.y.z
+```
+
+## 🧩 Issues & Labels
+
+Le dépôt contient des templates d'issues GitHub:
+
+- `bug_report.yml` (bug)
+- `feature_request.yml` (enhancement)
+- `task.yml` (chore)
+
+Les templates sont bilingues FR/EN.
+
+Les labels sont synchronisés automatiquement via GitHub Actions avec:
+
+- fichier source: `.github/labels.yml`
+- workflow: `.github/workflows/sync-labels.yml`
+
+Pour forcer une synchro manuelle depuis GitHub: Actions > `Sync Labels` > `Run workflow`.
+
 ## 📝 License
 
 MIT License

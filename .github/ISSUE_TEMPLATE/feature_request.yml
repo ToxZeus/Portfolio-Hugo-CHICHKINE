@@ -1,0 +1,52 @@
+name: Feature request
+description: Proposer une fonctionnalite / Request a feature
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Decris le besoin metier et la valeur apportee.
+        Describe the business need and expected value.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Intitule de la fonctionnalite / Feature title
+      placeholder: Ex. Ajouter un mode sombre
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Probleme a resoudre / Problem to solve
+      description: Quel probleme actuel cette fonctionnalite adresse-t-elle ? / Which current problem does this solve?
+      placeholder: Ex. La lecture de nuit est difficile sur fond clair
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposition de solution / Proposed solution
+      description: Decris la solution idealement attendue / Describe the expected solution
+      placeholder: Ex. Ajouter un toggle dans la navigation et conserver la preference
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives envisagees / Alternatives considered
+      description: Autres approches possibles / Other possible approaches
+      placeholder: Ex. Changer automatiquement selon les preferences systeme
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criteres d'acceptation / Acceptance criteria
+      description: Liste des conditions de validation / Validation checklist
+      placeholder: |
+        - Le toggle est visible sur mobile et desktop
+        - Le choix est persiste
+        - Le contraste respecte WCAG AA
