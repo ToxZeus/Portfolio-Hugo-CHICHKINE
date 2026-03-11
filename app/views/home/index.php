@@ -1,7 +1,7 @@
 <?php /* View content only; header/footer are handled by View::render */ ?>
 <main>
     <!-- Présentation -->
-    <section id="presentation" class="py-5 bg-light border-bottom">
+    <section id="presentation">
         <div class="container text-center">
             <h2 class="section-title display-5 mb-4">
                 <span class="lang-fr"><i class="bi bi-person-circle"></i> Présentation</span>
@@ -11,11 +11,21 @@
                 <span class="lang-fr">Je m'appelle <strong>Hugo Chichkine</strong>, étudiant passionné d'informatique. Je suis actuellement en <strong>3ème année à l'ESGI (École Supérieure du Génie Informatique)</strong> à Paris, en spécialisation <strong>Ingénierie Web</strong>. Je poursuis mon cursus en alternance avec un rythme de <strong>3 semaines en entreprise et 1 semaine à l'école</strong>. Je travaille actuellement chez <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> en tant qu'<strong>Alternant développement logiciel</strong>. J'aime développer des projets web, explorer de nouvelles technologies et relever des défis techniques.</span>
                 <span class="lang-en">My name is <strong>Hugo Chichkine</strong>, a passionate computer science student. I am currently in my <strong>third year at ESGI (Graduate School of Computer Engineering)</strong> in Paris, specializing in <strong>Web Engineering</strong>. I am doing a work-study program with a schedule of <strong>3 weeks in a company and 1 week at school</strong>. I currently work at <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> as a <strong>Software Development Apprentice</strong>. I love building web projects, exploring new technologies, and tackling technical challenges.</span>
             </p>
+            <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+                <a href="#projets" class="btn btn-light">
+                    <span class="lang-fr">Voir mes projets</span>
+                    <span class="lang-en">See my projects</span>
+                </a>
+                <a href="#contact" class="btn btn-outline-light">
+                    <span class="lang-fr">Me contacter</span>
+                    <span class="lang-en">Get in touch</span>
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Formations -->
-    <section id="parcours" class="py-5">
+    <section id="parcours">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-mortarboard"></i> Formations</span>
@@ -39,7 +49,7 @@
     </section>
 
     <!-- Compétences -->
-    <section id="competences" class="py-5 bg-light border-bottom">
+    <section id="competences">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-tools"></i> Compétences</span>
@@ -79,7 +89,7 @@
     </section>
 
     <!-- Projets -->
-    <section id="projets" class="py-5">
+    <section id="projets">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-folder2-open"></i> Projets</span>
@@ -93,6 +103,10 @@
                                 <span class="lang-fr">Site Portfolio Personnel</span>
                                 <span class="lang-en">Personal Portfolio Website</span>
                             </strong>
+                            <p class="mb-2 mt-2 text-muted">
+                                <span class="lang-fr">Portfolio multilingue orienté performance avec génération statique et navigation fluide.</span>
+                                <span class="lang-en">Performance-oriented multilingual portfolio with static generation and smooth navigation.</span>
+                            </p>
                             <span class="badge bg-secondary">PHP</span>
                             <span class="badge bg-secondary">Bootstrap</span>
                             <span class="badge bg-secondary">JavaScript</span>
@@ -102,6 +116,10 @@
                                 <span class="lang-fr">Site de Gestion de Consommation Cloud</span>
                                 <span class="lang-en">Cloud Consumption Management Site</span>
                             </strong>
+                            <p class="mb-2 mt-2 text-muted">
+                                <span class="lang-fr">Dashboard analytique pour suivre les coûts cloud, visualiser les tendances et déclencher des alertes.</span>
+                                <span class="lang-en">Analytics dashboard to monitor cloud costs, track trends, and trigger alerts.</span>
+                            </p>
                             <span class="badge bg-secondary">React.js</span>
                             <span class="badge bg-secondary">Python Flask</span>
                             <span class="badge bg-secondary">SQL</span>
@@ -111,6 +129,10 @@
                                 <span class="lang-fr">Site de Pizzeria avec App de Gestion</span>
                                 <span class="lang-en">Pizzeria Website with Management App</span>
                             </strong>
+                            <p class="mb-2 mt-2 text-muted">
+                                <span class="lang-fr">Plateforme de commande couplée à une application de gestion des stocks et de suivi des commandes.</span>
+                                <span class="lang-en">Ordering platform coupled with a stock and order management application.</span>
+                            </p>
                             <span class="badge bg-secondary">PHP</span>
                             <span class="badge bg-secondary">Java</span>
                             <span class="badge bg-secondary">SQL</span>
@@ -122,7 +144,7 @@
     </section>
 
     <!-- Expériences -->
-    <section id="experiences" class="py-5 bg-light border-bottom">
+    <section id="experiences">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-briefcase"></i> Expériences</span>
@@ -160,7 +182,7 @@
     </section>
 
     <!-- Qualités -->
-    <section id="qualites" class="py-5">
+    <section id="qualites">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-star"></i> Qualités</span>
@@ -193,7 +215,7 @@
 
 
     <!-- Langues -->
-    <section id="langues" class="py-5">
+    <section id="langues">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-translate"></i> Langues</span>
@@ -221,7 +243,7 @@
     </section>
 
     <!-- Centres d'intérêt -->
-    <section id="interets" class="py-5">
+    <section id="interets">
         <div class="container">
             <h2 class="section-title mb-4">
                 <span class="lang-fr"><i class="bi bi-heart"></i> Centres d'intérêt</span>
@@ -249,7 +271,7 @@
     </section>
 </main>
     <!-- Contact & CV (moved to the end) -->
-    <section id="contact" class="py-5 bg-light border-top">
+    <section id="contact">
         <div class="container">
             <h2 class="section-title mb-4 text-center">
                 <span class="lang-fr"><i class="bi bi-envelope"></i> Contact & CV</span>
