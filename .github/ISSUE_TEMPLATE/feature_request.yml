@@ -7,12 +7,14 @@ body:
       value: |
         Decris le besoin metier et la valeur apportee.
         Describe the business need and expected value.
+        Vous pouvez repondre en francais ou en anglais.
+        You can answer in French or English.
 
   - type: input
     id: summary
     attributes:
       label: Intitule de la fonctionnalite / Feature title
-      placeholder: Ex. Ajouter un mode sombre
+      placeholder: Ex. Ajouter un mode sombre / Add a dark mode
     validations:
       required: true
 
@@ -21,7 +23,7 @@ body:
     attributes:
       label: Probleme a resoudre / Problem to solve
       description: Quel probleme actuel cette fonctionnalite adresse-t-elle ? / Which current problem does this solve?
-      placeholder: Ex. La lecture de nuit est difficile sur fond clair
+      placeholder: Ex. La lecture de nuit est difficile sur fond clair / Night reading is difficult on a bright background
     validations:
       required: true
 
@@ -30,7 +32,7 @@ body:
     attributes:
       label: Proposition de solution / Proposed solution
       description: Decris la solution idealement attendue / Describe the expected solution
-      placeholder: Ex. Ajouter un toggle dans la navigation et conserver la preference
+      placeholder: Ex. Ajouter un toggle dans la navigation et conserver la preference / Add a navigation toggle and persist preference
     validations:
       required: true
 
@@ -39,7 +41,7 @@ body:
     attributes:
       label: Alternatives envisagees / Alternatives considered
       description: Autres approches possibles / Other possible approaches
-      placeholder: Ex. Changer automatiquement selon les preferences systeme
+      placeholder: Ex. Changer automatiquement selon les preferences systeme / Auto-switch from system preferences
 
   - type: textarea
     id: acceptance
@@ -47,6 +49,6 @@ body:
       label: Criteres d'acceptation / Acceptance criteria
       description: Liste des conditions de validation / Validation checklist
       placeholder: |
-        - Le toggle est visible sur mobile et desktop
-        - Le choix est persiste
-        - Le contraste respecte WCAG AA
+        - Le toggle est visible sur mobile et desktop / Toggle is visible on mobile and desktop
+        - Le choix est persiste / Choice is persisted
+        - Le contraste respecte WCAG AA / Contrast meets WCAG AA
