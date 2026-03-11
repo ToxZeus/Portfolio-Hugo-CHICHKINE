@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question generale / General question
+    url: https://github.com/ToxZeus/Portfolio-Hugo-CHICHKINE/discussions
+    about: Utilise les Discussions pour les questions non qualifiees en bug/feature. Use Discussions for general questions.

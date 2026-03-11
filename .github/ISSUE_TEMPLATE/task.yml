@@ -1,0 +1,44 @@
+name: Tache technique
+description: Suivre une tache technique / Track technical work
+labels: ["chore"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Titre de la tache / Task title
+      placeholder: Ex. Nettoyer les scripts JS inutilises
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte / Context
+      description: Pourquoi cette tache est necessaire ? / Why is this task needed?
+      placeholder: Ex. Simplifier la maintenance et reduire la dette technique
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Perimetre / Scope
+      description: Fichiers, modules ou zones impactes / Files, modules, or impacted areas
+      placeholder: Ex. public/assets/js/*.js
+
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Liste d'actions a realiser / Action checklist
+      placeholder: |
+        - [ ] Identifier le code mort
+        - [ ] Supprimer les references
+        - [ ] Verifier le fonctionnement global
+        - [ ] Mettre a jour la documentation
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Definition of done
+      placeholder: Ex. Build OK, tests manuels valides, PR relue et mergee
