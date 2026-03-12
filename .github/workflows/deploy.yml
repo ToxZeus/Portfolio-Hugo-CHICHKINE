@@ -27,8 +27,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # If you have a build step, run it here before uploading the artifact.
-      # Install PHP and generate static files into ./public using your script
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install frontend dependencies
+        run: npm ci
+
+      - name: Build frontend assets
+        run: npm run build
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:

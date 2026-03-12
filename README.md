@@ -1,69 +1,81 @@
 # Portfolio - Hugo Chichkine
 
-Ce portfolio est développé avec PHP, utilisant une architecture MVC et des technologies modernes pour une meilleure maintenabilité et performance.
+Portfolio personnel en PHP MVC, modernisé avec une couche TypeScript, une interface plus contemporaine et un déploiement GitHub Pages basé sur une génération statique.
 
-## 🛠 Technologies utilisées
+## Stack
 
 - PHP 7.4+
-- JavaScript (ES6+)
+- TypeScript + esbuild
+- JavaScript moderne
 - Bootstrap 5
-- HTML5 & CSS3
+- HTML5 / CSS3
+- GitHub Actions
 
-## 🚀 Installation
+## Installation
 
-1. Cloner le repository :
+1. Cloner le dépôt.
+
 ```bash
 git clone https://github.com/ToxZeus/Portfolio---Hugo-Chichkine.git
 cd Portfolio---Hugo-Chichkine
 ```
 
-2. Installer les dépendances :
+2. Installer les dépendances PHP et frontend.
+
 ```bash
 composer install
+npm install
 ```
 
-3. Configurer le serveur web :
-   - Point d'entrée : public/index.php
-   - Configuration Apache ou Nginx nécessaire
+3. Générer les assets TypeScript.
 
-4. Lancer le serveur de développement :
+```bash
+npm run build
+```
+
+4. Lancer le serveur PHP.
+
 ```bash
 php -S localhost:8000 -t public
 ```
 
-## 📁 Structure du projet
+## Scripts utiles
 
-```
-├── app/
-│   ├── controllers/
-│   ├── models/
-│   ├── views/
-│   │   └── templates/
-│   ├── Translation.php
-│   ├── Router.php
-│   └── bootstrap.php
-├── config/
-│   └── config.php
-├── lang/
-│   ├── fr.json
-│   └── en.json
-├── public/
-│   ├── assets/
-│   │   ├── css/
-│   │   └── js/
-│   └── index.php
-└── composer.json
+```bash
+npm run build
+composer test
+composer analyze
+php public/generate-static.php
 ```
 
-## 🌍 Fonctionnalités
+## Git Flow recommandé
 
-- Architecture MVC
-- Support multilingue (FR/EN)
-- Design responsive
-- Navigation fluide
-- Composants réutilisables
-- Gestion moderne des assets
+Le dépôt est pensé pour fonctionner avec un flux simple autour de `main` et `develop`.
 
-## 📝 License
+- `main` contient ce qui est prêt à être déployé.
+- `develop` centralise les intégrations avant merge vers `main`.
+- `feature/*` pour les évolutions.
+- `fix/*` pour les correctifs hors urgence.
+- `hotfix/*` pour les corrections à sortir rapidement depuis `main`.
+
+Un guide opérationnel est disponible dans `docs/git-flow.md`, avec un script PowerShell pour créer/publier rapidement les branches.
+
+## Déploiement
+
+Le workflow GitHub Actions construit les assets TypeScript puis génère la version statique avant déploiement sur GitHub Pages.
+
+## Structure
+
+```text
+app/
+config/
+docs/
+lang/
+public/
+scripts/
+src/ts/
+```
+
+## License
 
 MIT License
