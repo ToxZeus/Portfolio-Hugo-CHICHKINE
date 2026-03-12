@@ -10,14 +10,20 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>
-                <?php echo date('Y'); ?> © Hugo Chichkine
-            </p>
+            <div class="footer-content">
+                <p><?php echo date('Y'); ?> © Hugo Chichkine</p>
+                <p>
+                    <span class="lang-fr">Portfolio MVC modernisé avec TypeScript, animations légères et génération statique pour GitHub Pages.</span>
+                    <span class="lang-en">MVC portfolio modernized with TypeScript, lightweight animations, and static generation for GitHub Pages.</span>
+                </p>
+            </div>
         </div>
     </footer>
 
     <!-- Back to top button -->
-    <button id="backToTopBtn" aria-label="<?php echo $translations['back_to_top']; ?>">⬆️</button>
+    <button id="backToTopBtn" class="back-to-top" aria-label="<?php echo $translations['back_to_top']; ?>">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

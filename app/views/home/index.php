@@ -1,307 +1,401 @@
 <?php /* View content only; header/footer are handled by View::render */ ?>
-<main>
-    <!-- Présentation -->
-    <section id="presentation" class="py-5 bg-light border-bottom">
-        <div class="container text-center">
-            <h2 class="section-title display-5 mb-4">
-                <span class="lang-fr"><i class="bi bi-person-circle"></i> Présentation</span>
-                <span class="lang-en"><i class="bi bi-person-circle"></i> About Me</span>
-            </h2>
-            <p class="lead">
-                <span class="lang-fr">Je m'appelle <strong>Hugo Chichkine</strong>, étudiant passionné d'informatique. Je suis actuellement en <strong>3ème année à l'ESGI (École Supérieure du Génie Informatique)</strong> à Paris, en spécialisation <strong>Ingénierie Web</strong>. Je poursuis mon cursus en alternance avec un rythme de <strong>3 semaines en entreprise et 1 semaine à l'école</strong>. Je travaille actuellement chez <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> en tant qu'<strong>Alternant développement logiciel</strong>. J'aime développer des projets web, explorer de nouvelles technologies et relever des défis techniques.</span>
-                <span class="lang-en">My name is <strong>Hugo Chichkine</strong>, a passionate computer science student. I am currently in my <strong>third year at ESGI (Graduate School of Computer Engineering)</strong> in Paris, specializing in <strong>Web Engineering</strong>. I am doing a work-study program with a schedule of <strong>3 weeks in a company and 1 week at school</strong>. I currently work at <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> as a <strong>Software Development Apprentice</strong>. I love building web projects, exploring new technologies, and tackling technical challenges.</span>
-            </p>
-        </div>
-    </section>
+<main class="portfolio-main">
+    <section id="expertise" class="content-section" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Positionnement</span>
+                    <span class="lang-en">Positioning</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Une approche produit, code et delivery</span>
+                    <span class="lang-en">A product, code, and delivery mindset</span>
+                </h2>
+                <p class="section-intro">
+                    <span class="lang-fr">Je travaille sur toute la chaîne: conception d’interface, logique applicative, performance perçue, qualité de livraison et maintien d’un codebase simple à faire évoluer.</span>
+                    <span class="lang-en">I work across the full chain: interface design, application logic, perceived performance, delivery quality, and keeping the codebase simple to evolve.</span>
+                </p>
+            </div>
 
-    <!-- Formations -->
-    <section id="parcours" class="py-5">
-        <div class="container">
-            <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-mortarboard"></i> Formations</span>
-                <span class="lang-en"><i class="bi bi-mortarboard"></i> Education</span>
-            </h2>
-            <ul class="timeline list-unstyled">
-                <li class="mb-3">
-                    <span class="lang-fr">2025 : <strong>3ème année à l'ESGI</strong>, spécialisation Ingénierie Web <span class="badge bg-info">Alternance 3 semaines entreprise / 1 semaine école</span></span>
-                    <span class="lang-en">2025: <strong>Third year at ESGI</strong>, Web Engineering specialization <span class="badge bg-info">Work-study: 3 weeks company / 1 week school</span></span>
-                </li>
-                <li class="mb-3">
-                    <span class="lang-fr">2023-2025 : DUT & BUT Informatique, IUT d'Orsay</span>
-                    <span class="lang-en">2023-2025: Computer Science, IUT d'Orsay</span>
-                </li>
-                <li class="mb-3">
-                    <span class="lang-fr">2020-2023 : Bac Général, spécialité Mathématiques et NSI</span>
-                    <span class="lang-en">2020-2023: French Baccalaureate, Math & CS</span>
-                </li>
-            </ul>
-        </div>
-    </section>
+            <div class="expertise-grid">
+                <article class="feature-card" data-reveal>
+                    <span class="feature-icon"><i class="bi bi-window-sidebar"></i></span>
+                    <h3>
+                        <span class="lang-fr">Frontend moderne</span>
+                        <span class="lang-en">Modern frontend</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Interfaces nettes, hiérarchie visuelle forte, interactions utiles et animations sobres.</span>
+                        <span class="lang-en">Clean interfaces, strong visual hierarchy, useful interactions, and restrained motion.</span>
+                    </p>
+                    <div class="pill-row">
+                        <span>TypeScript</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>CSS</span>
+                    </div>
+                </article>
 
-    <!-- Compétences -->
-    <section id="competences" class="py-5 bg-light border-bottom">
-        <div class="container">
-            <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-tools"></i> Compétences</span>
-                <span class="lang-en"><i class="bi bi-tools"></i> Skills</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Frontend :</strong> HTML5, CSS3, JavaScript ES6+, React.js, Bootstrap</span>
-                            <span class="lang-en"><strong>Frontend:</strong> HTML5, CSS3, JavaScript ES6+, React.js, Bootstrap</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Backend :</strong> PHP, Python, Flask, Node.js</span>
-                            <span class="lang-en"><strong>Backend:</strong> PHP, Python, Flask, Node.js</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Base de données :</strong> SQL, MySQL, PostgreSQL</span>
-                            <span class="lang-en"><strong>Database:</strong> SQL, MySQL, PostgreSQL</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Outils :</strong> Git, GitHub, Docker, VS Code</span>
-                            <span class="lang-en"><strong>Tools:</strong> Git, GitHub, Docker, VS Code</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Mobile :</strong> Java, Android Studio</span>
-                            <span class="lang-en"><strong>Mobile:</strong> Java, Android Studio</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Autres :</strong> API REST, MVC, Responsive Design</span>
-                            <span class="lang-en"><strong>Others:</strong> REST API, MVC, Responsive Design</span>
-                        </li>
-                    </ul>
-                </div>
+                <article class="feature-card" data-reveal>
+                    <span class="feature-icon"><i class="bi bi-braces-asterisk"></i></span>
+                    <h3>
+                        <span class="lang-fr">Backend pragmatique</span>
+                        <span class="lang-en">Pragmatic backend</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Architecture MVC, APIs lisibles, services clairs et intégrations cohérentes avec la donnée.</span>
+                        <span class="lang-en">MVC architecture, readable APIs, clear services, and coherent data integrations.</span>
+                    </p>
+                    <div class="pill-row">
+                        <span>PHP</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="feature-card" data-reveal>
+                    <span class="feature-icon"><i class="bi bi-git"></i></span>
+                    <h3>
+                        <span class="lang-fr">Delivery propre</span>
+                        <span class="lang-en">Clean delivery</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Build reproductible, génération statique, Git Flow simple, commits ciblés et déploiement continu.</span>
+                        <span class="lang-en">Reproducible builds, static generation, simple Git Flow, focused commits, and continuous deployment.</span>
+                    </p>
+                    <div class="pill-row">
+                        <span>Git Flow</span>
+                        <span>GitHub Actions</span>
+                        <span>Pages</span>
+                        <span>CI</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="signal-grid">
+                <article class="signal-card" data-reveal>
+                    <span class="signal-label">
+                        <span class="lang-fr">Environnement actuel</span>
+                        <span class="lang-en">Current environment</span>
+                    </span>
+                    <strong>
+                        <span class="lang-fr">Technicatome + ESGI</span>
+                        <span class="lang-en">Technicatome + ESGI</span>
+                    </strong>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <span class="signal-label">
+                        <span class="lang-fr">Méthode</span>
+                        <span class="lang-en">Method</span>
+                    </span>
+                    <strong>
+                        <span class="lang-fr">Concevoir, coder, livrer</span>
+                        <span class="lang-en">Design, build, ship</span>
+                    </strong>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <span class="signal-label">
+                        <span class="lang-fr">Préférence</span>
+                        <span class="lang-en">Preference</span>
+                    </span>
+                    <strong>
+                        <span class="lang-fr">Interfaces à forte clarté</span>
+                        <span class="lang-en">High-clarity interfaces</span>
+                    </strong>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Projets -->
-    <section id="projets" class="py-5">
-        <div class="container">
-            <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-folder2-open"></i> Projets</span>
-                <span class="lang-en"><i class="bi bi-folder2-open"></i> Projects</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Site Portfolio Personnel</span>
-                                <span class="lang-en">Personal Portfolio Website</span>
-                            </strong>
-                            <span class="badge bg-secondary">PHP</span>
-                            <span class="badge bg-secondary">Bootstrap</span>
-                            <span class="badge bg-secondary">JavaScript</span>
+    <section id="projets" class="content-section content-section-alt" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Sélection</span>
+                    <span class="lang-en">Selection</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Des projets orientés usage réel</span>
+                    <span class="lang-en">Projects shaped by real usage</span>
+                </h2>
+            </div>
+
+            <div class="filter-bar" role="tablist" aria-label="Project filters">
+                <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+                <button class="filter-chip" type="button" data-filter="frontend">Frontend</button>
+                <button class="filter-chip" type="button" data-filter="fullstack">Fullstack</button>
+                <button class="filter-chip" type="button" data-filter="data">Data</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card" data-category="frontend fullstack" data-reveal>
+                    <div class="project-topline">
+                        <span class="project-year">2026</span>
+                        <span class="project-state">
+                            <span class="lang-fr">Refonte</span>
+                            <span class="lang-en">Refresh</span>
+                        </span>
+                    </div>
+                    <h3>
+                        <span class="lang-fr">Portfolio personnel</span>
+                        <span class="lang-en">Personal portfolio</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Refonte d’un portfolio PHP MVC avec interface plus éditoriale, pipeline TypeScript et génération statique pour GitHub Pages.</span>
+                        <span class="lang-en">A PHP MVC portfolio rebuilt with a more editorial interface, a TypeScript pipeline, and static generation for GitHub Pages.</span>
+                    </p>
+                    <ul class="project-points">
+                        <li>
+                            <span class="lang-fr">Design plus contemporain, navigation enrichie et animations pilotées au scroll</span>
+                            <span class="lang-en">More contemporary design, enhanced navigation, and scroll-driven animations</span>
                         </li>
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Site de Gestion de Consommation Cloud</span>
-                                <span class="lang-en">Cloud Consumption Management Site</span>
-                            </strong>
-                            <span class="badge bg-secondary">React.js</span>
-                            <span class="badge bg-secondary">Python Flask</span>
-                            <span class="badge bg-secondary">SQL</span>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Site de Pizzeria avec App de Gestion</span>
-                                <span class="lang-en">Pizzeria Website with Management App</span>
-                            </strong>
-                            <span class="badge bg-secondary">PHP</span>
-                            <span class="badge bg-secondary">Java</span>
-                            <span class="badge bg-secondary">SQL</span>
+                        <li>
+                            <span class="lang-fr">Build JS/TS automatisé dans la CI</span>
+                            <span class="lang-en">Automated JS/TS build in CI</span>
                         </li>
                     </ul>
-                </div>
+                    <div class="pill-row">
+                        <span>PHP</span>
+                        <span>TypeScript</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="fullstack data" data-reveal>
+                    <div class="project-topline">
+                        <span class="project-year">2025</span>
+                        <span class="project-state">
+                            <span class="lang-fr">Produit métier</span>
+                            <span class="lang-en">Business product</span>
+                        </span>
+                    </div>
+                    <h3>
+                        <span class="lang-fr">Gestion de consommation cloud</span>
+                        <span class="lang-en">Cloud consumption management</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Application pensée pour visualiser, filtrer et exploiter des données de consommation, avec une interface React et un backend Flask.</span>
+                        <span class="lang-en">An application designed to visualize, filter, and act on consumption data with a React interface and a Flask backend.</span>
+                    </p>
+                    <ul class="project-points">
+                        <li>
+                            <span class="lang-fr">Travail sur l’utilité métier et la lisibilité des données</span>
+                            <span class="lang-en">Focused on business usefulness and data readability</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Architecture API + persistance SQL</span>
+                            <span class="lang-en">API architecture with SQL persistence</span>
+                        </li>
+                    </ul>
+                    <div class="pill-row">
+                        <span>React</span>
+                        <span>Flask</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="fullstack" data-reveal>
+                    <div class="project-topline">
+                        <span class="project-year">2024</span>
+                        <span class="project-state">
+                            <span class="lang-fr">Gestion + vitrine</span>
+                            <span class="lang-en">Operations + storefront</span>
+                        </span>
+                    </div>
+                    <h3>
+                        <span class="lang-fr">Pizzeria avec app de gestion</span>
+                        <span class="lang-en">Pizzeria site with management app</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Projet combinant une expérience client côté web et une logique de gestion plus structurée côté application.</span>
+                        <span class="lang-en">A project combining a customer-facing website with more structured management logic in the application layer.</span>
+                    </p>
+                    <ul class="project-points">
+                        <li>
+                            <span class="lang-fr">Cohérence entre présentation, prise d’information et outillage interne</span>
+                            <span class="lang-en">Consistency across presentation, information flow, and internal tooling</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Base solide pour faire dialoguer plusieurs technos</span>
+                            <span class="lang-en">Strong base for making multiple technologies work together</span>
+                        </li>
+                    </ul>
+                    <div class="pill-row">
+                        <span>PHP</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Expériences -->
-    <section id="experiences" class="py-5 bg-light border-bottom">
-        <div class="container">
-            <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-briefcase"></i> Expériences</span>
-                <span class="lang-en"><i class="bi bi-briefcase"></i> Experience</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Alternant développement logiciel chez <a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></span>
-                                <span class="lang-en">Software Development Apprentice at <a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></span>
-                            </strong>
-                            <br>
-                            <small class="text-muted">
-                                <span class="lang-fr">Septembre 2025 - Maintenant</span>
-                                <span class="lang-en">September 2025 - Present</span>
-                            </small>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Stage développeur web chez <a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></span>
-                                <span class="lang-en">Web developer internship at <a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></span>
-                            </strong>
-                            <br>
-                            <small class="text-muted">
-                                <span class="lang-fr">Mai 2024 - Août 2024 (4 mois) & Janvier 2025 - Mai 2025 (5 mois)</span>
-                                <span class="lang-en">May 2024 - August 2024 (4 months) & January 2025 - May 2025 (5 months)</span>
-                            </small>
-                        </li>
-                    </ul>
-                </div>
+    <section id="parcours" class="content-section" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Parcours</span>
+                    <span class="lang-en">Journey</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Formation technique et expériences en contexte réel</span>
+                    <span class="lang-en">Technical training with real-world experience</span>
+                </h2>
+            </div>
+
+            <div class="timeline-grid">
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">2025 - 2026</span>
+                    <h3>
+                        <span class="lang-fr">ESGI Paris</span>
+                        <span class="lang-en">ESGI Paris</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">3ème année, spécialisation Ingénierie Web, en alternance 3 semaines entreprise / 1 semaine école.</span>
+                        <span class="lang-en">Third year, Web Engineering specialization, in a 3 weeks company / 1 week school work-study rhythm.</span>
+                    </p>
+                </article>
+
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">Depuis sept. 2025</span>
+                    <h3>
+                        <span class="lang-fr">Technicatome</span>
+                        <span class="lang-en">Technicatome</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Alternant développement logiciel avec exposition à des attentes de robustesse, de qualité et d’intégration en environnement industriel.</span>
+                        <span class="lang-en">Software development apprentice exposed to robustness, quality, and integration expectations in an industrial environment.</span>
+                    </p>
+                </article>
+
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">2024 - 2025</span>
+                    <h3>
+                        <span class="lang-fr">Quandela</span>
+                        <span class="lang-en">Quandela</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Stage développeur web sur deux périodes, avec pratique du développement produit et de la collaboration technique.</span>
+                        <span class="lang-en">Web development internship across two periods, focused on product development and technical collaboration.</span>
+                    </p>
+                </article>
+
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">2023 - 2025</span>
+                    <h3>
+                        <span class="lang-fr">IUT d'Orsay</span>
+                        <span class="lang-en">IUT d'Orsay</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">DUT / BUT Informatique, socle algorithmique, base de données, développement objet et projets d’équipe.</span>
+                        <span class="lang-en">Computer science degree covering algorithms, databases, object-oriented development, and team projects.</span>
+                    </p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Qualités -->
-    <section id="qualites" class="py-5">
-        <div class="container">
-            <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-star"></i> Qualités</span>
-                <span class="lang-en"><i class="bi bi-star"></i> Qualities</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr">Curiosité</span>
-                            <span class="lang-en">Curiosity</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Rigueur</span>
-                            <span class="lang-en">Rigor</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Esprit d'équipe</span>
-                            <span class="lang-en">Team spirit</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Créativité</span>
-                            <span class="lang-en">Creativity</span>
-                        </li>
+    <section id="atouts" class="content-section content-section-alt" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Repères</span>
+                    <span class="lang-en">Highlights</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Ce que j’apporte dans une équipe</span>
+                    <span class="lang-en">What I bring to a team</span>
+                </h2>
+            </div>
+
+            <div class="highlights-grid">
+                <article class="highlight-card" data-reveal>
+                    <h3>
+                        <span class="lang-fr">Qualités de travail</span>
+                        <span class="lang-en">Working style</span>
+                    </h3>
+                    <ul class="clean-list">
+                        <li><span class="lang-fr">Curiosité technique</span><span class="lang-en">Technical curiosity</span></li>
+                        <li><span class="lang-fr">Rigueur dans l’exécution</span><span class="lang-en">Execution discipline</span></li>
+                        <li><span class="lang-fr">Esprit d’équipe</span><span class="lang-en">Team mindset</span></li>
+                        <li><span class="lang-fr">Créativité cadrée par l’usage</span><span class="lang-en">Creativity constrained by usefulness</span></li>
                     </ul>
-                </div>
+                </article>
+
+                <article class="highlight-card" data-reveal>
+                    <h3>
+                        <span class="lang-fr">Langues</span>
+                        <span class="lang-en">Languages</span>
+                    </h3>
+                    <ul class="clean-list">
+                        <li><span class="lang-fr">Français — langue natale</span><span class="lang-en">French — native language</span></li>
+                        <li><span class="lang-fr">Anglais — niveau professionnel</span><span class="lang-en">English — professional level</span></li>
+                        <li><span class="lang-fr">Allemand — niveau scolaire</span><span class="lang-en">German — school level</span></li>
+                    </ul>
+                </article>
+
+                <article class="highlight-card" data-reveal>
+                    <h3>
+                        <span class="lang-fr">Centres d’intérêt</span>
+                        <span class="lang-en">Interests</span>
+                    </h3>
+                    <ul class="clean-list">
+                        <li><span class="lang-fr">Programmation web, e-sport et jeux vidéo</span><span class="lang-en">Web development, esports, and video games</span></li>
+                        <li><span class="lang-fr">Sports automobiles: Formule 1, WEC, Formule 2</span><span class="lang-en">Motorsport: Formula 1, WEC, Formula 2</span></li>
+                        <li><span class="lang-fr">Tennis</span><span class="lang-en">Tennis</span></li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
 
-
-    <!-- Langues -->
-    <section id="langues" class="py-5">
-        <div class="container">
-            <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-translate"></i> Langues</span>
-                <span class="lang-en"><i class="bi bi-translate"></i> Languages</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr">🇬🇧 Anglais — niveau professionnel</span>
-                            <span class="lang-en">🇬🇧 English — professional level</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">🇫🇷 Français — langue natale</span>
-                            <span class="lang-en">🇫🇷 French — native language</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">🇩🇪 Allemand — niveau scolaire</span>
-                            <span class="lang-en">🇩🇪 German — school level</span>
-                        </li>
-                    </ul>
-                </div>
+    <section id="contact" class="content-section" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading section-heading-wide">
+                <p class="section-kicker">
+                    <span class="lang-fr">Contact</span>
+                    <span class="lang-en">Contact</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Disponible pour échanger sur un stage, une alternance ou un projet web sérieux</span>
+                    <span class="lang-en">Available to discuss an internship, a work-study role, or a serious web project</span>
+                </h2>
             </div>
-        </div>
-    </section>
 
-    <!-- Centres d'intérêt -->
-    <section id="interets" class="py-5">
-        <div class="container">
-            <h2 class="section-title mb-4">
-                <span class="lang-fr"><i class="bi bi-heart"></i> Centres d'intérêt</span>
-                <span class="lang-en"><i class="bi bi-heart"></i> Interests</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr">Informatique — E-sport, jeux-vidéo, programmation web</span>
-                            <span class="lang-en">IT — e-sports, video games, web programming</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Sports automobiles — Formule 1, WEC, Formule 2...</span>
-                            <span class="lang-en">Motorsport — Formula 1, WEC, Formula 2...</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Tennis</span>
-                            <span class="lang-en">Tennis</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="contact-grid">
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-envelope-at"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:chichkinehugo@gmail.com">chichkinehugo@gmail.com</a></p>
+                </article>
+
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-telephone"></i>
+                    <h3>
+                        <span class="lang-fr">Téléphone</span>
+                        <span class="lang-en">Phone</span>
+                    </h3>
+                    <p><a href="tel:+33651395899">(+33) 6 51 39 58 99</a></p>
+                </article>
+
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener">linkedin.com/in/hugo-chichkine</a></p>
+                </article>
+
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-file-earmark-pdf"></i>
+                    <h3>CV</h3>
+                    <p>
+                        <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">
+                            <span class="lang-fr">Télécharger le PDF</span>
+                            <span class="lang-en">Download the PDF</span>
+                        </a>
+                    </p>
+                </article>
             </div>
         </div>
     </section>
 </main>
-    <!-- Contact & CV (moved to the end) -->
-    <section id="contact" class="py-5 bg-light border-top">
-        <div class="container">
-            <h2 class="section-title mb-4 text-center">
-                <span class="lang-fr"><i class="bi bi-envelope"></i> Contact & CV</span>
-                <span class="lang-en"><i class="bi bi-envelope"></i> Contact & Resume</span>
-            </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card p-4 shadow-sm">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>
-                                        <span class="lang-fr">Téléphone</span>
-                                        <span class="lang-en">Phone</span>
-                                    </strong><br>
-                                    <a href="tel:+33651395899">(+33) 6 51 39 58 99</a>
-                                </div>
-                                <i class="bi bi-telephone fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>
-                                        <span class="lang-fr">Email</span>
-                                        <span class="lang-en">Email</span>
-                                    </strong><br>
-                                    <a href="mailto:chichkinehugo@gmail.com">chichkinehugo@gmail.com</a>
-                                </div>
-                                <i class="bi bi-envelope-at fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>
-                                        <span class="lang-fr">CV (PDF)</span>
-                                        <span class="lang-en">Resume (PDF)</span>
-                                    </strong><br>
-                                    <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">
-                                        <span class="lang-fr">Télécharger mon CV</span>
-                                        <span class="lang-en">Download my Resume</span>
-                                    </a>
-                                </div>
-                                <i class="bi bi-file-earmark-pdf fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>LinkedIn</strong><br>
-                                    <a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener">linkedin.com/in/hugo-chichkine</a>
-                                </div>
-                                <i class="bi bi-linkedin fs-4"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>

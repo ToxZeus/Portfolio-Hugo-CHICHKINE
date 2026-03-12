@@ -1,7 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hugo Chichkine - Portfolio</title>
 
-Warning: Undefined array key "REQUEST_METHOD" in C:\Users\chich\Desktop\Portfolio---Hugo-Chichkine\app\Router.php on line 14
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+<body class="lang-fr" data-default-lang="fr" data-base-url="">
+    <!-- Header / Hero -->
+    <header class="hero" id="top">
+        <button id="langSwitcher" class="lang-switcher" type="button" data-current-lang="fr" aria-label="Switch language">
+            EN        </button>
 
-Warning: Undefined array key "REQUEST_URI" in C:\Users\chich\Desktop\Portfolio---Hugo-Chichkine\app\Router.php on line 15
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
 
-Deprecated: parse_url(): Passing null to parameter #1 ($url) of type string is deprecated in C:\Users\chich\Desktop\Portfolio---Hugo-Chichkine\app\Router.php on line 15
-404 Not Found
+        <div class="container hero-shell">
+            <div class="hero-copy" data-reveal>
+                <p class="hero-kicker">
+                    <span class="lang-fr">Portfolio 2026 • Produit, code, exécution</span>
+                    <span class="lang-en">Portfolio 2026 • Product, code, execution</span>
+                </p>
+
+                <h1>Hugo Chichkine</h1>
+
+                <p class="hero-lead">
+                    <span class="lang-fr">J’imagine et je développe des expériences web lisibles, rapides et prêtes pour la production, avec une préférence nette pour les interfaces qui ont une vraie personnalité.</span>
+                    <span class="lang-en">I design and build web experiences that are readable, fast, and production-ready, with a clear preference for interfaces that have real personality.</span>
+                </p>
+
+                <div class="hero-rotator">
+                    <span class="lang-fr">Focus actuel</span>
+                    <span class="lang-en">Current focus</span>
+                    <strong id="roleRotator" data-roles-fr="Alternant développement logiciel|Étudiant en ingénierie web|Constructeur d'interfaces fiables" data-roles-en="Software development apprentice|Web engineering student|Reliable interface builder"></strong>
+                </div>
+
+                <div class="hero-actions">
+                    <a class="hero-btn hero-btn-primary" href="#projets">
+                        <span class="lang-fr">Voir les projets</span>
+                        <span class="lang-en">View projects</span>
+                    </a>
+                    <a class="hero-btn hero-btn-secondary" href="#contact">
+                        <span class="lang-fr">Me contacter</span>
+                        <span class="lang-en">Contact me</span>
+                    </a>
+                    <a class="hero-link" href="/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">
+                        <span class="lang-fr">Télécharger le CV</span>
+                        <span class="lang-en">Download resume</span>
+                    </a>
+                </div>
+
+                <ul class="hero-highlights">
+                    <li>
+                        <i class="bi bi-geo-alt"></i>
+                        <span class="lang-fr">Paris • ESGI • spécialisation Ingénierie Web</span>
+                        <span class="lang-en">Paris • ESGI • Web Engineering major</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-building"></i>
+                        <span class="lang-fr">Alternance chez Technicatome</span>
+                        <span class="lang-en">Work-study program at Technicatome</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-lightning-charge"></i>
+                        <span class="lang-fr">Frontend moderne, backend pragmatique, livraison propre</span>
+                        <span class="lang-en">Modern frontend, pragmatic backend, clean delivery</span>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="hero-panel" data-reveal>
+                <div class="hero-panel-card">
+                    <p class="panel-label">
+                        <span class="lang-fr">Stack actuel</span>
+                        <span class="lang-en">Current stack</span>
+                    </p>
+                    <div class="stack-cloud">
+                        <span>TypeScript</span>
+                        <span>JavaScript</span>
+                        <span>PHP MVC</span>
+                        <span>Bootstrap</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>SQL</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <div class="hero-panel-grid">
+                    <article class="metric-card">
+                        <strong>3x1</strong>
+                        <span class="lang-fr">rythme alternance</span>
+                        <span class="lang-en">work-study cadence</span>
+                    </article>
+                    <article class="metric-card">
+                        <strong>4+</strong>
+                        <span class="lang-fr">écosystèmes maîtrisés</span>
+                        <span class="lang-en">ecosystems covered</span>
+                    </article>
+                    <article class="metric-card">
+                        <strong>FR / EN</strong>
+                        <span class="lang-fr">communication fluide</span>
+                        <span class="lang-en">fluent communication</span>
+                    </article>
+                    <article class="metric-card">
+                        <strong>2026</strong>
+                        <span class="lang-fr">version modernisée du portfolio</span>
+                        <span class="lang-en">modernized portfolio release</span>
+                    </article>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Navigation -->
+<nav class="navbar navbar-expand-md justify-content-center" aria-label="Navigation principale">
+    <div class="container-fluid justify-content-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#expertise" aria-current="page">
+                        <span class="lang-fr">Expertise</span>
+                        <span class="lang-en">Expertise</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projets">
+                        <span class="lang-fr">Projets</span>
+                        <span class="lang-en">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parcours">
+                        <span class="lang-fr">Parcours</span>
+                        <span class="lang-en">Journey</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#atouts">
+                        <span class="lang-fr">Atouts</span>
+                        <span class="lang-en">Highlights</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        <span class="lang-fr">Contact & CV</span>
+                        <span class="lang-en">Contact & Resume</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>    </header><main class="portfolio-main">
+    <section id="expertise" class="content-section" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Positionnement</span>
+                    <span class="lang-en">Positioning</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Une approche produit, code et delivery</span>
+                    <span class="lang-en">A product, code, and delivery mindset</span>
+                </h2>
+                <p class="section-intro">
+                    <span class="lang-fr">Je travaille sur toute la chaîne: conception d’interface, logique applicative, performance perçue, qualité de livraison et maintien d’un codebase simple à faire évoluer.</span>
+                    <span class="lang-en">I work across the full chain: interface design, application logic, perceived performance, delivery quality, and keeping the codebase simple to evolve.</span>
+                </p>
+            </div>
+
+            <div class="expertise-grid">
+                <article class="feature-card" data-reveal>
+                    <span class="feature-icon"><i class="bi bi-window-sidebar"></i></span>
+                    <h3>
+                        <span class="lang-fr">Frontend moderne</span>
+                        <span class="lang-en">Modern frontend</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Interfaces nettes, hiérarchie visuelle forte, interactions utiles et animations sobres.</span>
+                        <span class="lang-en">Clean interfaces, strong visual hierarchy, useful interactions, and restrained motion.</span>
+                    </p>
+                    <div class="pill-row">
+                        <span>TypeScript</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>CSS</span>
+                    </div>
+                </article>
+
+                <article class="feature-card" data-reveal>
+                    <span class="feature-icon"><i class="bi bi-braces-asterisk"></i></span>
+                    <h3>
+                        <span class="lang-fr">Backend pragmatique</span>
+                        <span class="lang-en">Pragmatic backend</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Architecture MVC, APIs lisibles, services clairs et intégrations cohérentes avec la donnée.</span>
+                        <span class="lang-en">MVC architecture, readable APIs, clear services, and coherent data integrations.</span>
+                    </p>
+                    <div class="pill-row">
+                        <span>PHP</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="feature-card" data-reveal>
+                    <span class="feature-icon"><i class="bi bi-git"></i></span>
+                    <h3>
+                        <span class="lang-fr">Delivery propre</span>
+                        <span class="lang-en">Clean delivery</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Build reproductible, génération statique, Git Flow simple, commits ciblés et déploiement continu.</span>
+                        <span class="lang-en">Reproducible builds, static generation, simple Git Flow, focused commits, and continuous deployment.</span>
+                    </p>
+                    <div class="pill-row">
+                        <span>Git Flow</span>
+                        <span>GitHub Actions</span>
+                        <span>Pages</span>
+                        <span>CI</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="signal-grid">
+                <article class="signal-card" data-reveal>
+                    <span class="signal-label">
+                        <span class="lang-fr">Environnement actuel</span>
+                        <span class="lang-en">Current environment</span>
+                    </span>
+                    <strong>
+                        <span class="lang-fr">Technicatome + ESGI</span>
+                        <span class="lang-en">Technicatome + ESGI</span>
+                    </strong>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <span class="signal-label">
+                        <span class="lang-fr">Méthode</span>
+                        <span class="lang-en">Method</span>
+                    </span>
+                    <strong>
+                        <span class="lang-fr">Concevoir, coder, livrer</span>
+                        <span class="lang-en">Design, build, ship</span>
+                    </strong>
+                </article>
+                <article class="signal-card" data-reveal>
+                    <span class="signal-label">
+                        <span class="lang-fr">Préférence</span>
+                        <span class="lang-en">Preference</span>
+                    </span>
+                    <strong>
+                        <span class="lang-fr">Interfaces à forte clarté</span>
+                        <span class="lang-en">High-clarity interfaces</span>
+                    </strong>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="content-section content-section-alt" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Sélection</span>
+                    <span class="lang-en">Selection</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Des projets orientés usage réel</span>
+                    <span class="lang-en">Projects shaped by real usage</span>
+                </h2>
+            </div>
+
+            <div class="filter-bar" role="tablist" aria-label="Project filters">
+                <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+                <button class="filter-chip" type="button" data-filter="frontend">Frontend</button>
+                <button class="filter-chip" type="button" data-filter="fullstack">Fullstack</button>
+                <button class="filter-chip" type="button" data-filter="data">Data</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card" data-category="frontend fullstack" data-reveal>
+                    <div class="project-topline">
+                        <span class="project-year">2026</span>
+                        <span class="project-state">
+                            <span class="lang-fr">Refonte</span>
+                            <span class="lang-en">Refresh</span>
+                        </span>
+                    </div>
+                    <h3>
+                        <span class="lang-fr">Portfolio personnel</span>
+                        <span class="lang-en">Personal portfolio</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Refonte d’un portfolio PHP MVC avec interface plus éditoriale, pipeline TypeScript et génération statique pour GitHub Pages.</span>
+                        <span class="lang-en">A PHP MVC portfolio rebuilt with a more editorial interface, a TypeScript pipeline, and static generation for GitHub Pages.</span>
+                    </p>
+                    <ul class="project-points">
+                        <li>
+                            <span class="lang-fr">Design plus contemporain, navigation enrichie et animations pilotées au scroll</span>
+                            <span class="lang-en">More contemporary design, enhanced navigation, and scroll-driven animations</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Build JS/TS automatisé dans la CI</span>
+                            <span class="lang-en">Automated JS/TS build in CI</span>
+                        </li>
+                    </ul>
+                    <div class="pill-row">
+                        <span>PHP</span>
+                        <span>TypeScript</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="fullstack data" data-reveal>
+                    <div class="project-topline">
+                        <span class="project-year">2025</span>
+                        <span class="project-state">
+                            <span class="lang-fr">Produit métier</span>
+                            <span class="lang-en">Business product</span>
+                        </span>
+                    </div>
+                    <h3>
+                        <span class="lang-fr">Gestion de consommation cloud</span>
+                        <span class="lang-en">Cloud consumption management</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Application pensée pour visualiser, filtrer et exploiter des données de consommation, avec une interface React et un backend Flask.</span>
+                        <span class="lang-en">An application designed to visualize, filter, and act on consumption data with a React interface and a Flask backend.</span>
+                    </p>
+                    <ul class="project-points">
+                        <li>
+                            <span class="lang-fr">Travail sur l’utilité métier et la lisibilité des données</span>
+                            <span class="lang-en">Focused on business usefulness and data readability</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Architecture API + persistance SQL</span>
+                            <span class="lang-en">API architecture with SQL persistence</span>
+                        </li>
+                    </ul>
+                    <div class="pill-row">
+                        <span>React</span>
+                        <span>Flask</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="fullstack" data-reveal>
+                    <div class="project-topline">
+                        <span class="project-year">2024</span>
+                        <span class="project-state">
+                            <span class="lang-fr">Gestion + vitrine</span>
+                            <span class="lang-en">Operations + storefront</span>
+                        </span>
+                    </div>
+                    <h3>
+                        <span class="lang-fr">Pizzeria avec app de gestion</span>
+                        <span class="lang-en">Pizzeria site with management app</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Projet combinant une expérience client côté web et une logique de gestion plus structurée côté application.</span>
+                        <span class="lang-en">A project combining a customer-facing website with more structured management logic in the application layer.</span>
+                    </p>
+                    <ul class="project-points">
+                        <li>
+                            <span class="lang-fr">Cohérence entre présentation, prise d’information et outillage interne</span>
+                            <span class="lang-en">Consistency across presentation, information flow, and internal tooling</span>
+                        </li>
+                        <li>
+                            <span class="lang-fr">Base solide pour faire dialoguer plusieurs technos</span>
+                            <span class="lang-en">Strong base for making multiple technologies work together</span>
+                        </li>
+                    </ul>
+                    <div class="pill-row">
+                        <span>PHP</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="content-section" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Parcours</span>
+                    <span class="lang-en">Journey</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Formation technique et expériences en contexte réel</span>
+                    <span class="lang-en">Technical training with real-world experience</span>
+                </h2>
+            </div>
+
+            <div class="timeline-grid">
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">2025 - 2026</span>
+                    <h3>
+                        <span class="lang-fr">ESGI Paris</span>
+                        <span class="lang-en">ESGI Paris</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">3ème année, spécialisation Ingénierie Web, en alternance 3 semaines entreprise / 1 semaine école.</span>
+                        <span class="lang-en">Third year, Web Engineering specialization, in a 3 weeks company / 1 week school work-study rhythm.</span>
+                    </p>
+                </article>
+
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">Depuis sept. 2025</span>
+                    <h3>
+                        <span class="lang-fr">Technicatome</span>
+                        <span class="lang-en">Technicatome</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Alternant développement logiciel avec exposition à des attentes de robustesse, de qualité et d’intégration en environnement industriel.</span>
+                        <span class="lang-en">Software development apprentice exposed to robustness, quality, and integration expectations in an industrial environment.</span>
+                    </p>
+                </article>
+
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">2024 - 2025</span>
+                    <h3>
+                        <span class="lang-fr">Quandela</span>
+                        <span class="lang-en">Quandela</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">Stage développeur web sur deux périodes, avec pratique du développement produit et de la collaboration technique.</span>
+                        <span class="lang-en">Web development internship across two periods, focused on product development and technical collaboration.</span>
+                    </p>
+                </article>
+
+                <article class="timeline-card" data-reveal>
+                    <span class="timeline-period">2023 - 2025</span>
+                    <h3>
+                        <span class="lang-fr">IUT d'Orsay</span>
+                        <span class="lang-en">IUT d'Orsay</span>
+                    </h3>
+                    <p>
+                        <span class="lang-fr">DUT / BUT Informatique, socle algorithmique, base de données, développement objet et projets d’équipe.</span>
+                        <span class="lang-en">Computer science degree covering algorithms, databases, object-oriented development, and team projects.</span>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="atouts" class="content-section content-section-alt" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading">
+                <p class="section-kicker">
+                    <span class="lang-fr">Repères</span>
+                    <span class="lang-en">Highlights</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Ce que j’apporte dans une équipe</span>
+                    <span class="lang-en">What I bring to a team</span>
+                </h2>
+            </div>
+
+            <div class="highlights-grid">
+                <article class="highlight-card" data-reveal>
+                    <h3>
+                        <span class="lang-fr">Qualités de travail</span>
+                        <span class="lang-en">Working style</span>
+                    </h3>
+                    <ul class="clean-list">
+                        <li><span class="lang-fr">Curiosité technique</span><span class="lang-en">Technical curiosity</span></li>
+                        <li><span class="lang-fr">Rigueur dans l’exécution</span><span class="lang-en">Execution discipline</span></li>
+                        <li><span class="lang-fr">Esprit d’équipe</span><span class="lang-en">Team mindset</span></li>
+                        <li><span class="lang-fr">Créativité cadrée par l’usage</span><span class="lang-en">Creativity constrained by usefulness</span></li>
+                    </ul>
+                </article>
+
+                <article class="highlight-card" data-reveal>
+                    <h3>
+                        <span class="lang-fr">Langues</span>
+                        <span class="lang-en">Languages</span>
+                    </h3>
+                    <ul class="clean-list">
+                        <li><span class="lang-fr">Français — langue natale</span><span class="lang-en">French — native language</span></li>
+                        <li><span class="lang-fr">Anglais — niveau professionnel</span><span class="lang-en">English — professional level</span></li>
+                        <li><span class="lang-fr">Allemand — niveau scolaire</span><span class="lang-en">German — school level</span></li>
+                    </ul>
+                </article>
+
+                <article class="highlight-card" data-reveal>
+                    <h3>
+                        <span class="lang-fr">Centres d’intérêt</span>
+                        <span class="lang-en">Interests</span>
+                    </h3>
+                    <ul class="clean-list">
+                        <li><span class="lang-fr">Programmation web, e-sport et jeux vidéo</span><span class="lang-en">Web development, esports, and video games</span></li>
+                        <li><span class="lang-fr">Sports automobiles: Formule 1, WEC, Formule 2</span><span class="lang-en">Motorsport: Formula 1, WEC, Formula 2</span></li>
+                        <li><span class="lang-fr">Tennis</span><span class="lang-en">Tennis</span></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section" data-reveal>
+        <div class="container section-shell">
+            <div class="section-heading section-heading-wide">
+                <p class="section-kicker">
+                    <span class="lang-fr">Contact</span>
+                    <span class="lang-en">Contact</span>
+                </p>
+                <h2 class="section-title">
+                    <span class="lang-fr">Disponible pour échanger sur un stage, une alternance ou un projet web sérieux</span>
+                    <span class="lang-en">Available to discuss an internship, a work-study role, or a serious web project</span>
+                </h2>
+            </div>
+
+            <div class="contact-grid">
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-envelope-at"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:chichkinehugo@gmail.com">chichkinehugo@gmail.com</a></p>
+                </article>
+
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-telephone"></i>
+                    <h3>
+                        <span class="lang-fr">Téléphone</span>
+                        <span class="lang-en">Phone</span>
+                    </h3>
+                    <p><a href="tel:+33651395899">(+33) 6 51 39 58 99</a></p>
+                </article>
+
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener">linkedin.com/in/hugo-chichkine</a></p>
+                </article>
+
+                <article class="contact-card" data-reveal>
+                    <i class="bi bi-file-earmark-pdf"></i>
+                    <h3>CV</h3>
+                    <p>
+                        <a href="/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">
+                            <span class="lang-fr">Télécharger le PDF</span>
+                            <span class="lang-en">Download the PDF</span>
+                        </a>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>2026 © Hugo Chichkine</p>
+                <p>
+                    <span class="lang-fr">Portfolio MVC modernisé avec TypeScript, animations légères et génération statique pour GitHub Pages.</span>
+                    <span class="lang-en">MVC portfolio modernized with TypeScript, lightweight animations, and static generation for GitHub Pages.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="/assets/js/app.js" type="module"></script>
+</body>
+</html>

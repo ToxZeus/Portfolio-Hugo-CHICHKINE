@@ -9,15 +9,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#parcours" aria-current="page">
-                        <span class="lang-fr">Formations</span>
-                        <span class="lang-en">Education</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#competences">
-                        <span class="lang-fr">Compétences</span>
-                        <span class="lang-en">Skills</span>
+                    <a class="nav-link active" href="#expertise" aria-current="page">
+                        <span class="lang-fr">Expertise</span>
+                        <span class="lang-en">Expertise</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -27,27 +21,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experiences">
-                        <span class="lang-fr">Expériences</span>
-                        <span class="lang-en">Experience</span>
+                    <a class="nav-link" href="#parcours">
+                        <span class="lang-fr">Parcours</span>
+                        <span class="lang-en">Journey</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#qualites">
-                        <span class="lang-fr">Qualités</span>
-                        <span class="lang-en">Qualities</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#langues">
-                        <span class="lang-fr">Langues</span>
-                        <span class="lang-en">Languages</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#interets">
-                        <span class="lang-fr">Centres d'intérêt</span>
-                        <span class="lang-en">Interests</span>
+                    <a class="nav-link" href="#atouts">
+                        <span class="lang-fr">Atouts</span>
+                        <span class="lang-en">Highlights</span>
                     </a>
                 </li>
                 <li class="nav-item">
