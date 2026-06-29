@@ -1,5 +1,6 @@
 <?php /* View content only; header/footer are handled by View::render */ ?>
 <main>
+
     <!-- Présentation -->
     <section id="presentation">
         <div class="container text-center">
@@ -7,11 +8,11 @@
                 <span class="lang-fr"><i class="bi bi-person-circle"></i> Présentation</span>
                 <span class="lang-en"><i class="bi bi-person-circle"></i> About Me</span>
             </h2>
-            <p class="lead">
+            <p class="lead reveal">
                 <span class="lang-fr">Je m'appelle <strong>Hugo Chichkine</strong>, étudiant passionné d'informatique. Je suis actuellement en <strong>3ème année à l'ESGI (École Supérieure du Génie Informatique)</strong> à Paris, en spécialisation <strong>Ingénierie Web</strong>. Je poursuis mon cursus en alternance avec un rythme de <strong>3 semaines en entreprise et 1 semaine à l'école</strong>. Je travaille actuellement chez <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> en tant qu'<strong>Alternant développement logiciel</strong>. J'aime développer des projets web, explorer de nouvelles technologies et relever des défis techniques.</span>
                 <span class="lang-en">My name is <strong>Hugo Chichkine</strong>, a passionate computer science student. I am currently in my <strong>third year at ESGI (Graduate School of Computer Engineering)</strong> in Paris, specializing in <strong>Web Engineering</strong>. I am doing a work-study program with a schedule of <strong>3 weeks in a company and 1 week at school</strong>. I currently work at <strong><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></strong> as a <strong>Software Development Apprentice</strong>. I love building web projects, exploring new technologies, and tackling technical challenges.</span>
             </p>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+            <div class="d-flex flex-wrap justify-content-center gap-2 mt-4 reveal">
                 <a href="#projets" class="btn btn-light">
                     <span class="lang-fr">Voir mes projets</span>
                     <span class="lang-en">See my projects</span>
@@ -31,20 +32,47 @@
                 <span class="lang-fr"><i class="bi bi-mortarboard"></i> Formations</span>
                 <span class="lang-en"><i class="bi bi-mortarboard"></i> Education</span>
             </h2>
-            <ul class="timeline list-unstyled">
-                <li class="mb-3">
-                    <span class="lang-fr">2025 : <strong>3ème année à l'ESGI</strong>, spécialisation Ingénierie Web <span class="badge bg-info">Alternance 3 semaines entreprise / 1 semaine école</span></span>
-                    <span class="lang-en">2025: <strong>Third year at ESGI</strong>, Web Engineering specialization <span class="badge bg-info">Work-study: 3 weeks company / 1 week school</span></span>
-                </li>
-                <li class="mb-3">
-                    <span class="lang-fr">2023-2025 : DUT & BUT Informatique, IUT d'Orsay</span>
-                    <span class="lang-en">2023-2025: Computer Science, IUT d'Orsay</span>
-                </li>
-                <li class="mb-3">
-                    <span class="lang-fr">2020-2023 : Bac Général, spécialité Mathématiques et NSI</span>
-                    <span class="lang-en">2020-2023: French Baccalaureate, Math & CS</span>
-                </li>
-            </ul>
+            <div class="timeline-v reveal">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="lang-fr">2025 — Présent</span>
+                        <span class="lang-en">2025 — Present</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h5>
+                            <span class="lang-fr">3ème année — ESGI Paris</span>
+                            <span class="lang-en">Third year — ESGI Paris</span>
+                        </h5>
+                        <p>
+                            <span class="lang-fr">Ingénierie Web · Alternance 3 semaines entreprise / 1 semaine école</span>
+                            <span class="lang-en">Web Engineering · Work-study: 3 weeks company / 1 week school</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 — 2025</div>
+                    <div class="timeline-content">
+                        <h5>
+                            <span class="lang-fr">DUT & BUT Informatique</span>
+                            <span class="lang-en">Computer Science (DUT & BUT)</span>
+                        </h5>
+                        <p>IUT d'Orsay</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 — 2023</div>
+                    <div class="timeline-content">
+                        <h5>
+                            <span class="lang-fr">Baccalauréat Général</span>
+                            <span class="lang-en">French Baccalaureate</span>
+                        </h5>
+                        <p>
+                            <span class="lang-fr">Spécialités Mathématiques & NSI</span>
+                            <span class="lang-en">Specializations: Mathematics & CS</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -55,34 +83,75 @@
                 <span class="lang-fr"><i class="bi bi-tools"></i> Compétences</span>
                 <span class="lang-en"><i class="bi bi-tools"></i> Skills</span>
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Frontend :</strong> HTML5, CSS3, JavaScript ES6+, React.js, Bootstrap</span>
-                            <span class="lang-en"><strong>Frontend:</strong> HTML5, CSS3, JavaScript ES6+, React.js, Bootstrap</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Backend :</strong> PHP, Python, Flask, Node.js</span>
-                            <span class="lang-en"><strong>Backend:</strong> PHP, Python, Flask, Node.js</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Base de données :</strong> SQL, MySQL, PostgreSQL</span>
-                            <span class="lang-en"><strong>Database:</strong> SQL, MySQL, PostgreSQL</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Outils :</strong> Git, GitHub, Docker, VS Code</span>
-                            <span class="lang-en"><strong>Tools:</strong> Git, GitHub, Docker, VS Code</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Mobile :</strong> Java, Android Studio</span>
-                            <span class="lang-en"><strong>Mobile:</strong> Java, Android Studio</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr"><strong>Autres :</strong> API REST, MVC, Responsive Design</span>
-                            <span class="lang-en"><strong>Others:</strong> REST API, MVC, Responsive Design</span>
-                        </li>
-                    </ul>
+            <div class="skills-categories reveal">
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <i class="bi bi-code-slash"></i> Frontend
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript ES6+</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <i class="bi bi-server"></i> Backend
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <i class="bi bi-database"></i>
+                        <span class="lang-fr">Base de données</span>
+                        <span class="lang-en">Database</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <i class="bi bi-wrench-adjustable"></i>
+                        <span class="lang-fr">Outils</span>
+                        <span class="lang-en">Tools</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <i class="bi bi-phone"></i> Mobile
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Android Studio</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">
+                        <i class="bi bi-puzzle"></i>
+                        <span class="lang-fr">Autres</span>
+                        <span class="lang-en">Other</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">API REST</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,49 +164,60 @@
                 <span class="lang-fr"><i class="bi bi-folder2-open"></i> Projets</span>
                 <span class="lang-en"><i class="bi bi-folder2-open"></i> Projects</span>
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Site Portfolio Personnel</span>
-                                <span class="lang-en">Personal Portfolio Website</span>
-                            </strong>
-                            <p class="mb-2 mt-2 text-muted">
-                                <span class="lang-fr">Portfolio multilingue orienté performance avec génération statique et navigation fluide.</span>
-                                <span class="lang-en">Performance-oriented multilingual portfolio with static generation and smooth navigation.</span>
-                            </p>
-                            <span class="badge bg-secondary">PHP</span>
-                            <span class="badge bg-secondary">Bootstrap</span>
-                            <span class="badge bg-secondary">JavaScript</span>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Site de Gestion de Consommation Cloud</span>
-                                <span class="lang-en">Cloud Consumption Management Site</span>
-                            </strong>
-                            <p class="mb-2 mt-2 text-muted">
-                                <span class="lang-fr">Dashboard analytique pour suivre les coûts cloud, visualiser les tendances et déclencher des alertes.</span>
-                                <span class="lang-en">Analytics dashboard to monitor cloud costs, track trends, and trigger alerts.</span>
-                            </p>
-                            <span class="badge bg-secondary">React.js</span>
-                            <span class="badge bg-secondary">Python Flask</span>
-                            <span class="badge bg-secondary">SQL</span>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Site de Pizzeria avec App de Gestion</span>
-                                <span class="lang-en">Pizzeria Website with Management App</span>
-                            </strong>
-                            <p class="mb-2 mt-2 text-muted">
-                                <span class="lang-fr">Plateforme de commande couplée à une application de gestion des stocks et de suivi des commandes.</span>
-                                <span class="lang-en">Ordering platform coupled with a stock and order management application.</span>
-                            </p>
-                            <span class="badge bg-secondary">PHP</span>
-                            <span class="badge bg-secondary">Java</span>
-                            <span class="badge bg-secondary">SQL</span>
-                        </li>
-                    </ul>
+            <div class="projects-grid reveal">
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <i class="bi bi-person-workspace project-icon"></i>
+                    </div>
+                    <h5>
+                        <span class="lang-fr">Site Portfolio Personnel</span>
+                        <span class="lang-en">Personal Portfolio Website</span>
+                    </h5>
+                    <p class="project-desc">
+                        <span class="lang-fr">Portfolio multilingue orienté performance avec génération statique et navigation fluide.</span>
+                        <span class="lang-en">Performance-oriented multilingual portfolio with static generation and smooth navigation.</span>
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">Bootstrap</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <i class="bi bi-cloud-check project-icon"></i>
+                    </div>
+                    <h5>
+                        <span class="lang-fr">Site de Gestion de Consommation Cloud</span>
+                        <span class="lang-en">Cloud Consumption Management Site</span>
+                    </h5>
+                    <p class="project-desc">
+                        <span class="lang-fr">Dashboard analytique pour suivre les coûts cloud, visualiser les tendances et déclencher des alertes.</span>
+                        <span class="lang-en">Analytics dashboard to monitor cloud costs, track trends, and trigger alerts.</span>
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">React.js</span>
+                        <span class="project-tag">Python Flask</span>
+                        <span class="project-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <i class="bi bi-shop project-icon"></i>
+                    </div>
+                    <h5>
+                        <span class="lang-fr">Site de Pizzeria avec App de Gestion</span>
+                        <span class="lang-en">Pizzeria Website with Management App</span>
+                    </h5>
+                    <p class="project-desc">
+                        <span class="lang-fr">Plateforme de commande couplée à une application de gestion des stocks et de suivi des commandes.</span>
+                        <span class="lang-en">Ordering platform coupled with a stock and order management application.</span>
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">SQL</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,32 +230,45 @@
                 <span class="lang-fr"><i class="bi bi-briefcase"></i> Expériences</span>
                 <span class="lang-en"><i class="bi bi-briefcase"></i> Experience</span>
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Alternant développement logiciel chez <a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></span>
-                                <span class="lang-en">Software Development Apprentice at <a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></span>
-                            </strong>
-                            <br>
-                            <small class="text-muted">
-                                <span class="lang-fr">Septembre 2025 - Maintenant</span>
-                                <span class="lang-en">September 2025 - Present</span>
-                            </small>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>
-                                <span class="lang-fr">Stage développeur web chez <a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></span>
-                                <span class="lang-en">Web developer internship at <a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></span>
-                            </strong>
-                            <br>
-                            <small class="text-muted">
-                                <span class="lang-fr">Mai 2024 - Août 2024 (4 mois) & Janvier 2025 - Mai 2025 (5 mois)</span>
-                                <span class="lang-en">May 2024 - August 2024 (4 months) & January 2025 - May 2025 (5 months)</span>
-                            </small>
-                        </li>
-                    </ul>
+            <div class="timeline-v reveal">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="lang-fr">Sept. 2025 — Présent</span>
+                        <span class="lang-en">Sep. 2025 — Present</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h5>
+                            <span class="lang-fr">Alternant développement logiciel</span>
+                            <span class="lang-en">Software Development Apprentice</span>
+                        </h5>
+                        <p><a href="https://www.technicatome.com/" target="_blank" rel="noopener">Technicatome</a></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="lang-fr">Jan. 2025 — Mai 2025</span>
+                        <span class="lang-en">Jan. 2025 — May 2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h5>
+                            <span class="lang-fr">Stage développeur web (5 mois)</span>
+                            <span class="lang-en">Web Developer Internship (5 months)</span>
+                        </h5>
+                        <p><a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="lang-fr">Mai 2024 — Août 2024</span>
+                        <span class="lang-en">May 2024 — Aug. 2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h5>
+                            <span class="lang-fr">Stage développeur web (4 mois)</span>
+                            <span class="lang-en">Web Developer Internship (4 months)</span>
+                        </h5>
+                        <p><a href="https://www.quandela.com/" target="_blank" rel="noopener">Quandela</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,31 +281,38 @@
                 <span class="lang-fr"><i class="bi bi-star"></i> Qualités</span>
                 <span class="lang-en"><i class="bi bi-star"></i> Qualities</span>
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr">Curiosité</span>
-                            <span class="lang-en">Curiosity</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Rigueur</span>
-                            <span class="lang-en">Rigor</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Esprit d'équipe</span>
-                            <span class="lang-en">Team spirit</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Créativité</span>
-                            <span class="lang-en">Creativity</span>
-                        </li>
-                    </ul>
+            <div class="qualities-grid reveal">
+                <div class="quality-card">
+                    <i class="bi bi-lightbulb quality-icon"></i>
+                    <span class="quality-label">
+                        <span class="lang-fr">Curiosité</span>
+                        <span class="lang-en">Curiosity</span>
+                    </span>
+                </div>
+                <div class="quality-card">
+                    <i class="bi bi-check2-circle quality-icon"></i>
+                    <span class="quality-label">
+                        <span class="lang-fr">Rigueur</span>
+                        <span class="lang-en">Rigor</span>
+                    </span>
+                </div>
+                <div class="quality-card">
+                    <i class="bi bi-people quality-icon"></i>
+                    <span class="quality-label">
+                        <span class="lang-fr">Esprit d'équipe</span>
+                        <span class="lang-en">Team spirit</span>
+                    </span>
+                </div>
+                <div class="quality-card">
+                    <i class="bi bi-palette quality-icon"></i>
+                    <span class="quality-label">
+                        <span class="lang-fr">Créativité</span>
+                        <span class="lang-en">Creativity</span>
+                    </span>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Langues -->
     <section id="langues">
@@ -221,22 +321,60 @@
                 <span class="lang-fr"><i class="bi bi-translate"></i> Langues</span>
                 <span class="lang-en"><i class="bi bi-translate"></i> Languages</span>
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr">🇬🇧 Anglais — niveau professionnel</span>
-                            <span class="lang-en">🇬🇧 English — professional level</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">🇫🇷 Français — langue natale</span>
-                            <span class="lang-en">🇫🇷 French — native language</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">🇩🇪 Allemand — niveau scolaire</span>
-                            <span class="lang-en">🇩🇪 German — school level</span>
-                        </li>
-                    </ul>
+            <div class="lang-list reveal">
+                <div class="lang-item">
+                    <span class="lang-flag">🇫🇷</span>
+                    <span class="lang-name">
+                        <span class="lang-fr">Français</span>
+                        <span class="lang-en">French</span>
+                    </span>
+                    <div class="lang-dots">
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                    </div>
+                    <span class="lang-level-label">
+                        <span class="lang-fr">Natif</span>
+                        <span class="lang-en">Native</span>
+                    </span>
+                </div>
+                <div class="lang-item">
+                    <span class="lang-flag">🇬🇧</span>
+                    <span class="lang-name">
+                        <span class="lang-fr">Anglais</span>
+                        <span class="lang-en">English</span>
+                    </span>
+                    <div class="lang-dots">
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot"></span>
+                    </div>
+                    <span class="lang-level-label">
+                        <span class="lang-fr">Professionnel</span>
+                        <span class="lang-en">Professional</span>
+                    </span>
+                </div>
+                <div class="lang-item">
+                    <span class="lang-flag">🇩🇪</span>
+                    <span class="lang-name">
+                        <span class="lang-fr">Allemand</span>
+                        <span class="lang-en">German</span>
+                    </span>
+                    <div class="lang-dots">
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot filled"></span>
+                        <span class="lang-dot"></span>
+                        <span class="lang-dot"></span>
+                        <span class="lang-dot"></span>
+                    </div>
+                    <span class="lang-level-label">
+                        <span class="lang-fr">Scolaire</span>
+                        <span class="lang-en">School</span>
+                    </span>
                 </div>
             </div>
         </div>
@@ -249,81 +387,90 @@
                 <span class="lang-fr"><i class="bi bi-heart"></i> Centres d'intérêt</span>
                 <span class="lang-en"><i class="bi bi-heart"></i> Interests</span>
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <span class="lang-fr">Informatique — E-sport, jeux-vidéo, programmation web</span>
-                            <span class="lang-en">IT — e-sports, video games, web programming</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Sports automobiles — Formule 1, WEC, Formule 2...</span>
-                            <span class="lang-en">Motorsport — Formula 1, WEC, Formula 2...</span>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="lang-fr">Tennis</span>
-                            <span class="lang-en">Tennis</span>
-                        </li>
-                    </ul>
+            <div class="interests-wrap reveal">
+                <div class="interest-chip">
+                    <i class="bi bi-controller"></i>
+                    <span>
+                        <span class="lang-fr">E-sport & Jeux-vidéo</span>
+                        <span class="lang-en">E-sports & Video games</span>
+                    </span>
+                </div>
+                <div class="interest-chip">
+                    <i class="bi bi-code-slash"></i>
+                    <span>
+                        <span class="lang-fr">Programmation web</span>
+                        <span class="lang-en">Web programming</span>
+                    </span>
+                </div>
+                <div class="interest-chip">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>
+                        <span class="lang-fr">Formule 1 & WEC</span>
+                        <span class="lang-en">Formula 1 & WEC</span>
+                    </span>
+                </div>
+                <div class="interest-chip">
+                    <i class="bi bi-dribbble"></i>
+                    <span>Tennis</span>
                 </div>
             </div>
         </div>
     </section>
-</main>
-    <!-- Contact & CV (moved to the end) -->
+
+    <!-- Contact & CV -->
     <section id="contact">
         <div class="container">
             <h2 class="section-title mb-4 text-center">
                 <span class="lang-fr"><i class="bi bi-envelope"></i> Contact & CV</span>
                 <span class="lang-en"><i class="bi bi-envelope"></i> Contact & Resume</span>
             </h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card p-4 shadow-sm">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>
-                                        <span class="lang-fr">Téléphone</span>
-                                        <span class="lang-en">Phone</span>
-                                    </strong><br>
-                                    <a href="tel:+33651395899">(+33) 6 51 39 58 99</a>
-                                </div>
-                                <i class="bi bi-telephone fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>
-                                        <span class="lang-fr">Email</span>
-                                        <span class="lang-en">Email</span>
-                                    </strong><br>
-                                    <a href="mailto:chichkinehugo@gmail.com">chichkinehugo@gmail.com</a>
-                                </div>
-                                <i class="bi bi-envelope-at fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>
-                                        <span class="lang-fr">CV (PDF)</span>
-                                        <span class="lang-en">Resume (PDF)</span>
-                                    </strong><br>
-                                    <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener">
-                                        <span class="lang-fr">Télécharger mon CV</span>
-                                        <span class="lang-en">Download my Resume</span>
-                                    </a>
-                                </div>
-                                <i class="bi bi-file-earmark-pdf fs-4"></i>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center justify-content-between">
-                                <div>
-                                    <strong>LinkedIn</strong><br>
-                                    <a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener">linkedin.com/in/hugo-chichkine</a>
-                                </div>
-                                <i class="bi bi-linkedin fs-4"></i>
-                            </li>
-                        </ul>
+            <div class="contact-grid reveal">
+                <a href="tel:+33651395899" class="contact-item">
+                    <div class="contact-item-icon"><i class="bi bi-telephone"></i></div>
+                    <div class="contact-item-body">
+                        <strong>
+                            <span class="lang-fr">Téléphone</span>
+                            <span class="lang-en">Phone</span>
+                        </strong>
+                        <span>(+33) 6 51 39 58 99</span>
                     </div>
-                </div>
+                </a>
+                <a href="mailto:chichkinehugo@gmail.com" class="contact-item">
+                    <div class="contact-item-icon"><i class="bi bi-envelope-at"></i></div>
+                    <div class="contact-item-body">
+                        <strong>Email</strong>
+                        <span>chichkinehugo@gmail.com</span>
+                    </div>
+                </a>
+                <a href="<?php echo BASE_URL; ?>/CV_CHICHKINE_HUGO.pdf" target="_blank" rel="noopener" class="contact-item">
+                    <div class="contact-item-icon"><i class="bi bi-file-earmark-pdf"></i></div>
+                    <div class="contact-item-body">
+                        <strong>
+                            <span class="lang-fr">Curriculum Vitae</span>
+                            <span class="lang-en">Resume</span>
+                        </strong>
+                        <span>
+                            <span class="lang-fr">Télécharger le PDF</span>
+                            <span class="lang-en">Download PDF</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/hugo-chichkine/" target="_blank" rel="noopener" class="contact-item">
+                    <div class="contact-item-icon"><i class="bi bi-linkedin"></i></div>
+                    <div class="contact-item-body">
+                        <strong>LinkedIn</strong>
+                        <span>hugo-chichkine</span>
+                    </div>
+                </a>
+                <a href="https://github.com/toxzeus" target="_blank" rel="noopener" class="contact-item">
+                    <div class="contact-item-icon"><i class="bi bi-github"></i></div>
+                    <div class="contact-item-body">
+                        <strong>GitHub</strong>
+                        <span>toxzeus</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
+
+</main>
