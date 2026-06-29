@@ -561,8 +561,9 @@ section[id='contact']:hover {
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--ink-500);
-    min-width: 64px;
+    min-width: 88px;
     text-align: right;
+    white-space: nowrap;
 }
 
 /* ========== INTERESTS ========== */
