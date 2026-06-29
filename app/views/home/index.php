@@ -167,15 +167,40 @@
             <div class="projects-grid reveal">
                 <div class="project-card">
                     <div class="project-card-top">
+                        <i class="bi bi-wallet2 project-icon"></i>
+                        <a href="https://github.com/ToxZeus/Projet-annuel-3IW" target="_blank" rel="noopener" class="project-github-link">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </div>
+                    <h5>
+                        <span class="lang-fr">Budgie — Gestion financière personnelle</span>
+                        <span class="lang-en">Budgie — Personal Finance Manager</span>
+                    </h5>
+                    <p class="project-desc">
+                        <span class="lang-fr">Application web MVC de gestion de comptes, dépenses et revenus récurrents avec prévisions mensuelles et déploiement Docker. Projet annuel ESGI 3IW.</span>
+                        <span class="lang-en">MVC web app for managing accounts, recurring expenses and income, monthly forecasts, and Docker deployment. ESGI 3rd-year annual project.</span>
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">SQLite</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">MVC</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-top">
                         <i class="bi bi-person-workspace project-icon"></i>
+                        <a href="https://github.com/ToxZeus/Portfolio-Hugo-CHICHKINE" target="_blank" rel="noopener" class="project-github-link">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
                     </div>
                     <h5>
                         <span class="lang-fr">Site Portfolio Personnel</span>
                         <span class="lang-en">Personal Portfolio Website</span>
                     </h5>
                     <p class="project-desc">
-                        <span class="lang-fr">Portfolio multilingue orienté performance avec génération statique et navigation fluide.</span>
-                        <span class="lang-en">Performance-oriented multilingual portfolio with static generation and smooth navigation.</span>
+                        <span class="lang-fr">Portfolio bilingue FR/EN avec génération de site statique, animations au scroll et déploiement automatique sur GitHub Pages.</span>
+                        <span class="lang-en">Bilingual FR/EN portfolio with static site generation, scroll animations, and automated GitHub Pages deployment.</span>
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">PHP</span>
@@ -186,14 +211,18 @@
                 <div class="project-card">
                     <div class="project-card-top">
                         <i class="bi bi-cloud-check project-icon"></i>
+                        <span class="project-no-link">
+                            <span class="lang-fr">Projet interne Quandela</span>
+                            <span class="lang-en">Internal — Quandela</span>
+                        </span>
                     </div>
                     <h5>
-                        <span class="lang-fr">Site de Gestion de Consommation Cloud</span>
-                        <span class="lang-en">Cloud Consumption Management Site</span>
+                        <span class="lang-fr">Dashboard de Consommation Cloud</span>
+                        <span class="lang-en">Cloud Consumption Dashboard</span>
                     </h5>
                     <p class="project-desc">
-                        <span class="lang-fr">Dashboard analytique pour suivre les coûts cloud, visualiser les tendances et déclencher des alertes.</span>
-                        <span class="lang-en">Analytics dashboard to monitor cloud costs, track trends, and trigger alerts.</span>
+                        <span class="lang-fr">Dashboard analytique pour suivre les coûts cloud, visualiser les tendances de consommation et déclencher des alertes. Réalisé en stage chez Quandela.</span>
+                        <span class="lang-en">Analytics dashboard to monitor cloud costs, visualize consumption trends, and trigger alerts. Built during internship at Quandela.</span>
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">React.js</span>
@@ -204,14 +233,18 @@
                 <div class="project-card">
                     <div class="project-card-top">
                         <i class="bi bi-shop project-icon"></i>
+                        <span class="project-no-link">
+                            <span class="lang-fr">Projet académique</span>
+                            <span class="lang-en">Academic project</span>
+                        </span>
                     </div>
                     <h5>
-                        <span class="lang-fr">Site de Pizzeria avec App de Gestion</span>
-                        <span class="lang-en">Pizzeria Website with Management App</span>
+                        <span class="lang-fr">Pizzeria — Commande & Gestion des stocks</span>
+                        <span class="lang-en">Pizzeria — Order & Stock Management</span>
                     </h5>
                     <p class="project-desc">
-                        <span class="lang-fr">Plateforme de commande couplée à une application de gestion des stocks et de suivi des commandes.</span>
-                        <span class="lang-en">Ordering platform coupled with a stock and order management application.</span>
+                        <span class="lang-fr">Plateforme de commande en ligne couplée à une application Java de gestion des stocks et de suivi des commandes en temps réel.</span>
+                        <span class="lang-en">Online ordering platform coupled with a Java application for real-time stock and order management.</span>
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">PHP</span>
