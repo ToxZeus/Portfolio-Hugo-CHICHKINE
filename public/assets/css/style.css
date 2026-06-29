@@ -424,6 +424,33 @@ section[id='contact']:hover {
     font-size: 1.5rem;
     color: var(--sea-500);
 }
+.project-github-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ink-500);
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: opacity 0.2s, color 0.2s, background 0.2s, border-color 0.2s;
+}
+.project-github-link i { font-size: 0.9rem; }
+.project-card:hover .project-github-link {
+    opacity: 1;
+    color: var(--sea-700);
+    background: rgba(23, 134, 166, 0.08);
+    border-color: rgba(23, 134, 166, 0.2);
+}
+.project-no-link {
+    font-size: 0.73rem;
+    color: var(--ink-500);
+    opacity: 0.5;
+    font-style: italic;
+}
 .project-card h5 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 0.97rem;
