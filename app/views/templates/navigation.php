@@ -9,7 +9,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#parcours" aria-current="page">
+                    <a class="nav-link active" href="#presentation" aria-current="page">
+                        <span class="lang-fr">Présentation</span>
+                        <span class="lang-en">About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parcours">
                         <span class="lang-fr">Formations</span>
                         <span class="lang-en">Education</span>
                     </a>
